@@ -13,7 +13,7 @@ def check_price():
 
     URL = 'https://www.amazon.com/-/es/Camisetas-Witches-Camiseta-divertida-Halloween/dp/B07FKZCMBN/ref=sr_1_6?_encoding=UTF8&c=ts&dchild=1&keywords=new+in+shirts+and+t-shirts+for+women&qid=1630457767&s=apparel&sr=1-6&ts_id=9056922011'
 
-    #headers: http://httpbin.org/get
+    #headers: http://httpbin.org/get (copy "User-Agent" and replace below)
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36", "Accept-Encoding":"gzip, deflate", "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "DNT":"1","Connection":"close", "Upgrade-Insecure-Requests":"1"}
 
     page = requests.get(URL, headers=headers)
